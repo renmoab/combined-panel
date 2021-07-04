@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+h2 {text-align: center;}
+p {text-align: center;}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.left {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.right {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.top {
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 80%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+.buttom {
+  margin: 0;
+  position: absolute;
+  top: 60%;
+  left: 80%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.btnstyle1 {
+  background-color: #ff99dd
+;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.btnstyle2 {
+  background-color: #cc99ff;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.btnstyle3 {
+  background-color: #99bbff;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.btnstyle4 {
+  background-color: #80ffaa;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.btnstyle5 {
+  background-color: #ffbf80;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+.slide1 {
+  margin: 0;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+.slide2 {
+  margin: 0;
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+.slide3 {
+  margin: 0;
+  position: absolute;
+  top: 56%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+
+.slide4 {
+  margin: 0;
+  position: absolute;
+  top: 69%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+.slide5 {
+  margin: 0;
+  position: absolute;
+  top: 82%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+.slide6 {
+  margin: 0;
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.btnz {
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.btnz2 {
+  margin: 0;
+  position: absolute;
+  top: 105%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+</style>
+</head>
+<body>
+
+
+<form action="connecting.php" method="post">
+
+
+<h2 style="font-size:50px;">COMBINED Robot control panel </h2>
+<p>the following buttons are directions for the robot </p>
+
+<br>
+  <div class="center">
+    <button class="btnstyle1"name="the_stop " value="S" >STOP</button>
+  </div>
+</div>
+
+<div class="left">
+  <button class="btnstyle2" name="the_left" value="L" >LEFT</button>
+</div>
+</div>
+
+
+<div class="right">
+  <button class="btnstyle3" name="the_right" value="R" >RIGHT</button>
+</div>
+</div>
+
+
+<div class="buttom">
+  <button class="btnstyle4" name="the_backward" value="B">BACKWARD</button>
+</div>
+</div>
+
+
+
+<div class="top">
+  <button class="btnstyle5" name="the_forward"value="F" >FORWARD</button>
+</div>
+</div>
+
+
+
+
+<p> first engine</p>
+<div class="rangeslider">
+  <input type="range"class="slide1" min="1" max="1000" value="0"
+                  class="myslider" id="sliderRange1">
+  <p>Value: <span id="demo1"></span></p>
+</div>
+<br>
+<p> second engine</p>
+
+<div class="rangeslider">
+  <input type="range"class="slide2" min="1" max="1000" value="0"
+                  class="myslider" id="sliderRange2">
+  <p>Value: <span id="demo2"></span></p>
+</div>
+<br>
+
+<p>third engine</p>
+
+<div class="rangeslider">
+    <input type="range"class="slide3" min="1" max="1000" value="0"
+                    class="myslider" id="sliderRange3">
+    <p>Value: <span id="demo3"></span></p>
+  </div>
+  <br>
+
+<p>fourth engine</p>
+  <div class="rangeslider">
+        <input type="range"class="slide4" min="1" max="1000" value="0"
+                        class="myslider" id="sliderRange4">
+        <p>Value: <span id="demo4"></span></p>
+      </div>
+      <br>
+
+    <p>  fifth engine</p>
+      <div class="rangeslider">
+        <input type="range" class="slide5"min="1" max="1000" value="0"
+                        class="myslider" id="sliderRange5">
+        <p>Value: <span id="demo5"></span></p>
+      </div>
+      <br>
+
+      <p>  sixth engine</p>
+        <div class="rangeslider">
+          <input type="range"class="slide6" min="1" max="1000" value="0"
+                          class="myslider" id="sliderRange6">
+          <p>Value: <span id="demo6"></span></p>
+        </div>
+        <br>
+
+
+      <div class="rangeslider">
+        <button id="savebutton"class="btnz2"> save</button>
+      </div>
+
+
+      <div class="rangeslider">
+        <button id="runbutton" class="btnz"> run</button>
+      </div>
+
+
+
+
+</form>
+
+<script>
+
+
+var rangeslider = document.getElementById("sliderRange1");
+var output = document.getElementById("demo1");
+
+output.innerHTML = rangeslider.value;
+
+rangeslider.oninput = function() {
+  output.innerHTML = this.value;
+}
+
+var rangeslider2 = document.getElementById("sliderRange2");
+var output2 = document.getElementById("demo2");
+output2.innerHTML = rangeslider.value;
+
+rangeslider2.oninput = function() {
+  output2.innerHTML = this.value;
+}
+
+
+var rangeslider3 = document.getElementById("sliderRange3");
+var output3 = document.getElementById("demo3");
+output3.innerHTML = rangeslider3.value;
+
+rangeslider3.oninput = function() {
+  output3.innerHTML = this.value;
+}
+
+
+var rangeslider4 = document.getElementById("sliderRange4");
+var output4 = document.getElementById("demo4");
+output4.innerHTML = rangeslider4.value;
+
+rangeslider4.oninput = function() {
+  output4.innerHTML = this.value;
+}
+
+
+var rangeslider5 = document.getElementById("sliderRange5");
+var output5 = document.getElementById("demo5");
+output4.innerHTML = rangeslider4.value;
+
+rangeslider5.oninput = function() {
+  output5.innerHTML = this.value;
+
+  var first_engine;
+  var second_engine;
+  var third_engine;
+var fourth_engine;
+var fifth_engine;
+var sixth_engine;
+
+
+function first_engine() {
+    return document.getElementById("demo1").value;
+}
+
+function second_engine() {
+    return document.getElementById("demo2").value;
+}
+
+function third_engine() {
+    return document.getElementById("demo3").value;
+}
+
+function fourth_engine() {
+    return document.getElementById("demo4").value;
+}
+
+function fifth_engine() {
+    return document.getElementById("demo5").value;
+}
+
+function sixth_engine() {
+    return document.getElementById("demo6").value;
+}
+
+
+  function display(){
+
+    first_engine = getfirst_engine();
+    second_engine = getsecond_engine();
+    third_engine = getthird_engine();
+    fourth_engine = getfourth_engine();
+    fifth_engine = getfifth_engine();
+    sixth_engine = getsicth_engine();
+
+
+    window.alert(first_engine + second_engine + third_engine+fourth_engine + fifth_engine + sixth_engine);
+   document.getElementById("form").submit();
+
+
+
+  }
+
+
+}
+
+
+
+</script>
+
+
+</body>
+</html>
